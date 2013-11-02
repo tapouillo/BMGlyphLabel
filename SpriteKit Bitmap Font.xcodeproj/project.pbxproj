@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F84C811218241FE500C5B17F /* BMGlyphFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C810F18241FE500C5B17F /* BMGlyphFont.m */; };
+		F84C811318241FE500C5B17F /* BMGlyphLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C811118241FE500C5B17F /* BMGlyphLabel.m */; };
+		F84C81151824223700C5B17F /* yellow-coin.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C81141824223700C5B17F /* yellow-coin.png */; };
+		F8FB31FF1805D34300E7EECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB31FE1805D34300E7EECA /* Foundation.framework */; };
+		F8FB32011805D34300E7EECA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB32001805D34300E7EECA /* CoreGraphics.framework */; };
+		F8FB32031805D34300E7EECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB32021805D34300E7EECA /* UIKit.framework */; };
+		F8FB32051805D34300E7EECA /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB32041805D34300E7EECA /* SpriteKit.framework */; };
+		F8FB320B1805D34300E7EECA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32091805D34300E7EECA /* InfoPlist.strings */; };
+		F8FB320D1805D34300E7EECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB320C1805D34300E7EECA /* main.m */; };
+		F8FB32111805D34300E7EECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB32101805D34300E7EECA /* AppDelegate.m */; };
+		F8FB32141805D34300E7EECA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32121805D34300E7EECA /* Main_iPhone.storyboard */; };
+		F8FB32171805D34300E7EECA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32151805D34300E7EECA /* Main_iPad.storyboard */; };
+		F8FB321A1805D34300E7EECA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB32191805D34300E7EECA /* ViewController.m */; };
+		F8FB321D1805D34300E7EECA /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB321C1805D34300E7EECA /* MyScene.m */; };
+		F8FB321F1805D34300E7EECA /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FB321E1805D34300E7EECA /* Spaceship.png */; };
+		F8FB32211805D34300E7EECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32201805D34300E7EECA /* Images.xcassets */; };
+		F8FB32281805D34300E7EECA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB32271805D34300E7EECA /* XCTest.framework */; };
+		F8FB32291805D34300E7EECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB31FE1805D34300E7EECA /* Foundation.framework */; };
+		F8FB322A1805D34300E7EECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB32021805D34300E7EECA /* UIKit.framework */; };
+		F8FB32321805D34300E7EECA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32301805D34300E7EECA /* InfoPlist.strings */; };
+		F8FB32341805D34300E7EECA /* SpriteKit_Bitmap_FontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB32331805D34300E7EECA /* SpriteKit_Bitmap_FontTests.m */; };
+		F8FB323E18070C3200E7EECA /* bmGlyph.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F8FB323D18070C3100E7EECA /* bmGlyph.atlas */; };
+		F8FB32431809441D00E7EECA /* bmGlyph.xml in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32421809441D00E7EECA /* bmGlyph.xml */; };
+		F8FB32451809B87400E7EECA /* bmGlyph@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32441809B87400E7EECA /* bmGlyph@2x.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8FB322B1805D34300E7EECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8FB31F31805D34300E7EECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8FB31FA1805D34300E7EECA;
+			remoteInfo = "SpriteKit Bitmap Font";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F84C810E18241FE500C5B17F /* BMGlyphFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlyphFont.h; sourceTree = "<group>"; };
+		F84C810F18241FE500C5B17F /* BMGlyphFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMGlyphFont.m; sourceTree = "<group>"; };
+		F84C811018241FE500C5B17F /* BMGlyphLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlyphLabel.h; sourceTree = "<group>"; };
+		F84C811118241FE500C5B17F /* BMGlyphLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMGlyphLabel.m; sourceTree = "<group>"; };
+		F84C81141824223700C5B17F /* yellow-coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-coin.png"; sourceTree = "<group>"; };
+		F8FB31FB1805D34300E7EECA /* SpriteKit Bitmap Font.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKit Bitmap Font.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8FB31FE1805D34300E7EECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8FB32001805D34300E7EECA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8FB32021805D34300E7EECA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F8FB32041805D34300E7EECA /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		F8FB32081805D34300E7EECA /* SpriteKit Bitmap Font-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit Bitmap Font-Info.plist"; sourceTree = "<group>"; };
+		F8FB320A1805D34300E7EECA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8FB320C1805D34300E7EECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8FB320E1805D34300E7EECA /* SpriteKit Bitmap Font-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteKit Bitmap Font-Prefix.pch"; sourceTree = "<group>"; };
+		F8FB320F1805D34300E7EECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8FB32101805D34300E7EECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8FB32131805D34300E7EECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		F8FB32161805D34300E7EECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F8FB32181805D34300E7EECA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F8FB32191805D34300E7EECA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8FB321B1805D34300E7EECA /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		F8FB321C1805D34300E7EECA /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		F8FB321E1805D34300E7EECA /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		F8FB32201805D34300E7EECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8FB32261805D34300E7EECA /* SpriteKit Bitmap FontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpriteKit Bitmap FontTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8FB32271805D34300E7EECA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F8FB322F1805D34300E7EECA /* SpriteKit Bitmap FontTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit Bitmap FontTests-Info.plist"; sourceTree = "<group>"; };
+		F8FB32311805D34300E7EECA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8FB32331805D34300E7EECA /* SpriteKit_Bitmap_FontTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKit_Bitmap_FontTests.m; sourceTree = "<group>"; };
+		F8FB323D18070C3100E7EECA /* bmGlyph.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = bmGlyph.atlas; path = ../../../Desktop/bmGlyph.atlas; sourceTree = "<group>"; };
+		F8FB32421809441D00E7EECA /* bmGlyph.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = bmGlyph.xml; path = ../../../Desktop/bmGlyph.xml; sourceTree = "<group>"; };
+		F8FB32441809B87400E7EECA /* bmGlyph@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "bmGlyph@2x.xml"; path = "../../../Desktop/bmGlyph@2x.xml"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8FB31F81805D34300E7EECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FB32011805D34300E7EECA /* CoreGraphics.framework in Frameworks */,
+				F8FB32031805D34300E7EECA /* UIKit.framework in Frameworks */,
+				F8FB32051805D34300E7EECA /* SpriteKit.framework in Frameworks */,
+				F8FB31FF1805D34300E7EECA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8FB32231805D34300E7EECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FB32281805D34300E7EECA /* XCTest.framework in Frameworks */,
+				F8FB322A1805D34300E7EECA /* UIKit.framework in Frameworks */,
+				F8FB32291805D34300E7EECA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8FB31F21805D34300E7EECA = {
+			isa = PBXGroup;
+			children = (
+				F8FB32061805D34300E7EECA /* SpriteKit Bitmap Font */,
+				F8FB322D1805D34300E7EECA /* SpriteKit Bitmap FontTests */,
+				F8FB31FD1805D34300E7EECA /* Frameworks */,
+				F8FB31FC1805D34300E7EECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8FB31FC1805D34300E7EECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8FB31FB1805D34300E7EECA /* SpriteKit Bitmap Font.app */,
+				F8FB32261805D34300E7EECA /* SpriteKit Bitmap FontTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8FB31FD1805D34300E7EECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8FB31FE1805D34300E7EECA /* Foundation.framework */,
+				F8FB32001805D34300E7EECA /* CoreGraphics.framework */,
+				F8FB32021805D34300E7EECA /* UIKit.framework */,
+				F8FB32041805D34300E7EECA /* SpriteKit.framework */,
+				F8FB32271805D34300E7EECA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8FB32061805D34300E7EECA /* SpriteKit Bitmap Font */ = {
+			isa = PBXGroup;
+			children = (
+				F84C810E18241FE500C5B17F /* BMGlyphFont.h */,
+				F84C810F18241FE500C5B17F /* BMGlyphFont.m */,
+				F84C811018241FE500C5B17F /* BMGlyphLabel.h */,
+				F84C811118241FE500C5B17F /* BMGlyphLabel.m */,
+				F8FB32441809B87400E7EECA /* bmGlyph@2x.xml */,
+				F8FB32421809441D00E7EECA /* bmGlyph.xml */,
+				F8FB323D18070C3100E7EECA /* bmGlyph.atlas */,
+				F8FB320F1805D34300E7EECA /* AppDelegate.h */,
+				F8FB32101805D34300E7EECA /* AppDelegate.m */,
+				F8FB32121805D34300E7EECA /* Main_iPhone.storyboard */,
+				F8FB32151805D34300E7EECA /* Main_iPad.storyboard */,
+				F8FB32181805D34300E7EECA /* ViewController.h */,
+				F8FB32191805D34300E7EECA /* ViewController.m */,
+				F8FB321B1805D34300E7EECA /* MyScene.h */,
+				F8FB321C1805D34300E7EECA /* MyScene.m */,
+				F8FB321E1805D34300E7EECA /* Spaceship.png */,
+				F84C81141824223700C5B17F /* yellow-coin.png */,
+				F8FB32201805D34300E7EECA /* Images.xcassets */,
+				F8FB32071805D34300E7EECA /* Supporting Files */,
+			);
+			path = "SpriteKit Bitmap Font";
+			sourceTree = "<group>";
+		};
+		F8FB32071805D34300E7EECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8FB32081805D34300E7EECA /* SpriteKit Bitmap Font-Info.plist */,
+				F8FB32091805D34300E7EECA /* InfoPlist.strings */,
+				F8FB320C1805D34300E7EECA /* main.m */,
+				F8FB320E1805D34300E7EECA /* SpriteKit Bitmap Font-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8FB322D1805D34300E7EECA /* SpriteKit Bitmap FontTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8FB32331805D34300E7EECA /* SpriteKit_Bitmap_FontTests.m */,
+				F8FB322E1805D34300E7EECA /* Supporting Files */,
+			);
+			path = "SpriteKit Bitmap FontTests";
+			sourceTree = "<group>";
+		};
+		F8FB322E1805D34300E7EECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8FB322F1805D34300E7EECA /* SpriteKit Bitmap FontTests-Info.plist */,
+				F8FB32301805D34300E7EECA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8FB31FA1805D34300E7EECA /* SpriteKit Bitmap Font */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8FB32371805D34300E7EECA /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap Font" */;
+			buildPhases = (
+				F8FB31F71805D34300E7EECA /* Sources */,
+				F8FB31F81805D34300E7EECA /* Frameworks */,
+				F8FB31F91805D34300E7EECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpriteKit Bitmap Font";
+			productName = "SpriteKit Bitmap Font";
+			productReference = F8FB31FB1805D34300E7EECA /* SpriteKit Bitmap Font.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8FB32251805D34300E7EECA /* SpriteKit Bitmap FontTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8FB323A1805D34300E7EECA /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap FontTests" */;
+			buildPhases = (
+				F8FB32221805D34300E7EECA /* Sources */,
+				F8FB32231805D34300E7EECA /* Frameworks */,
+				F8FB32241805D34300E7EECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8FB322C1805D34300E7EECA /* PBXTargetDependency */,
+			);
+			name = "SpriteKit Bitmap FontTests";
+			productName = "SpriteKit Bitmap FontTests";
+			productReference = F8FB32261805D34300E7EECA /* SpriteKit Bitmap FontTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8FB31F31805D34300E7EECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Stéphane QUERAUD";
+				TargetAttributes = {
+					F8FB32251805D34300E7EECA = {
+						TestTargetID = F8FB31FA1805D34300E7EECA;
+					};
+				};
+			};
+			buildConfigurationList = F8FB31F61805D34300E7EECA /* Build configuration list for PBXProject "SpriteKit Bitmap Font" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8FB31F21805D34300E7EECA;
+			productRefGroup = F8FB31FC1805D34300E7EECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8FB31FA1805D34300E7EECA /* SpriteKit Bitmap Font */,
+				F8FB32251805D34300E7EECA /* SpriteKit Bitmap FontTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8FB31F91805D34300E7EECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FB321F1805D34300E7EECA /* Spaceship.png in Resources */,
+				F84C81151824223700C5B17F /* yellow-coin.png in Resources */,
+				F8FB32431809441D00E7EECA /* bmGlyph.xml in Resources */,
+				F8FB32451809B87400E7EECA /* bmGlyph@2x.xml in Resources */,
+				F8FB32211805D34300E7EECA /* Images.xcassets in Resources */,
+				F8FB32171805D34300E7EECA /* Main_iPad.storyboard in Resources */,
+				F8FB323E18070C3200E7EECA /* bmGlyph.atlas in Resources */,
+				F8FB32141805D34300E7EECA /* Main_iPhone.storyboard in Resources */,
+				F8FB320B1805D34300E7EECA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8FB32241805D34300E7EECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FB32321805D34300E7EECA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8FB31F71805D34300E7EECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FB321D1805D34300E7EECA /* MyScene.m in Sources */,
+				F8FB321A1805D34300E7EECA /* ViewController.m in Sources */,
+				F84C811318241FE500C5B17F /* BMGlyphLabel.m in Sources */,
+				F8FB32111805D34300E7EECA /* AppDelegate.m in Sources */,
+				F84C811218241FE500C5B17F /* BMGlyphFont.m in Sources */,
+				F8FB320D1805D34300E7EECA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8FB32221805D34300E7EECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FB32341805D34300E7EECA /* SpriteKit_Bitmap_FontTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8FB322C1805D34300E7EECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8FB31FA1805D34300E7EECA /* SpriteKit Bitmap Font */;
+			targetProxy = F8FB322B1805D34300E7EECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8FB32091805D34300E7EECA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8FB320A1805D34300E7EECA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F8FB32121805D34300E7EECA /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8FB32131805D34300E7EECA /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F8FB32151805D34300E7EECA /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8FB32161805D34300E7EECA /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F8FB32301805D34300E7EECA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8FB32311805D34300E7EECA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8FB32351805D34300E7EECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8FB32361805D34300E7EECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8FB32381805D34300E7EECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit Bitmap Font/SpriteKit Bitmap Font-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit Bitmap Font/SpriteKit Bitmap Font-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8FB32391805D34300E7EECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit Bitmap Font/SpriteKit Bitmap Font-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit Bitmap Font/SpriteKit Bitmap Font-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F8FB323B1805D34300E7EECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit Bitmap Font.app/SpriteKit Bitmap Font";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit Bitmap Font/SpriteKit Bitmap Font-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpriteKit Bitmap FontTests/SpriteKit Bitmap FontTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F8FB323C1805D34300E7EECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit Bitmap Font.app/SpriteKit Bitmap Font";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit Bitmap Font/SpriteKit Bitmap Font-Prefix.pch";
+				INFOPLIST_FILE = "SpriteKit Bitmap FontTests/SpriteKit Bitmap FontTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8FB31F61805D34300E7EECA /* Build configuration list for PBXProject "SpriteKit Bitmap Font" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8FB32351805D34300E7EECA /* Debug */,
+				F8FB32361805D34300E7EECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8FB32371805D34300E7EECA /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap Font" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8FB32381805D34300E7EECA /* Debug */,
+				F8FB32391805D34300E7EECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8FB323A1805D34300E7EECA /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap FontTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8FB323B1805D34300E7EECA /* Debug */,
+				F8FB323C1805D34300E7EECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8FB31F31805D34300E7EECA /* Project object */;
+}
