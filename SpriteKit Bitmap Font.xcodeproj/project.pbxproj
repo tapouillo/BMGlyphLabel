@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE3F2D0618438DAD004776E1 /* bmGlyph.xml in Resources */ = {isa = PBXBuildFile; fileRef = AE3F2D0418438DAD004776E1 /* bmGlyph.xml */; };
+		AE3F2D0718438DAD004776E1 /* bmGlyph@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = AE3F2D0518438DAD004776E1 /* bmGlyph@2x.xml */; };
+		AE3F2D0918438E5D004776E1 /* bmGlyph.atlas in Resources */ = {isa = PBXBuildFile; fileRef = AE3F2D0818438E5D004776E1 /* bmGlyph.atlas */; };
 		F84C811218241FE500C5B17F /* BMGlyphFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C810F18241FE500C5B17F /* BMGlyphFont.m */; };
 		F84C811318241FE500C5B17F /* BMGlyphLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C811118241FE500C5B17F /* BMGlyphLabel.m */; };
 		F84C81151824223700C5B17F /* yellow-coin.png in Resources */ = {isa = PBXBuildFile; fileRef = F84C81141824223700C5B17F /* yellow-coin.png */; };
@@ -28,9 +31,6 @@
 		F8FB322A1805D34300E7EECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FB32021805D34300E7EECA /* UIKit.framework */; };
 		F8FB32321805D34300E7EECA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32301805D34300E7EECA /* InfoPlist.strings */; };
 		F8FB32341805D34300E7EECA /* SpriteKit_Bitmap_FontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB32331805D34300E7EECA /* SpriteKit_Bitmap_FontTests.m */; };
-		F8FB323E18070C3200E7EECA /* bmGlyph.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F8FB323D18070C3100E7EECA /* bmGlyph.atlas */; };
-		F8FB32431809441D00E7EECA /* bmGlyph.xml in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32421809441D00E7EECA /* bmGlyph.xml */; };
-		F8FB32451809B87400E7EECA /* bmGlyph@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32441809B87400E7EECA /* bmGlyph@2x.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE3F2D0418438DAD004776E1 /* bmGlyph.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bmGlyph.xml; sourceTree = "<group>"; };
+		AE3F2D0518438DAD004776E1 /* bmGlyph@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "bmGlyph@2x.xml"; sourceTree = "<group>"; };
+		AE3F2D0818438E5D004776E1 /* bmGlyph.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bmGlyph.atlas; sourceTree = "<group>"; };
 		F84C810E18241FE500C5B17F /* BMGlyphFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlyphFont.h; sourceTree = "<group>"; };
 		F84C810F18241FE500C5B17F /* BMGlyphFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMGlyphFont.m; sourceTree = "<group>"; };
 		F84C811018241FE500C5B17F /* BMGlyphLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlyphLabel.h; sourceTree = "<group>"; };
@@ -73,9 +76,6 @@
 		F8FB322F1805D34300E7EECA /* SpriteKit Bitmap FontTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit Bitmap FontTests-Info.plist"; sourceTree = "<group>"; };
 		F8FB32311805D34300E7EECA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8FB32331805D34300E7EECA /* SpriteKit_Bitmap_FontTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKit_Bitmap_FontTests.m; sourceTree = "<group>"; };
-		F8FB323D18070C3100E7EECA /* bmGlyph.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = bmGlyph.atlas; path = ../../../Desktop/bmGlyph.atlas; sourceTree = "<group>"; };
-		F8FB32421809441D00E7EECA /* bmGlyph.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = bmGlyph.xml; path = ../../../Desktop/bmGlyph.xml; sourceTree = "<group>"; };
-		F8FB32441809B87400E7EECA /* bmGlyph@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "bmGlyph@2x.xml"; path = "../../../Desktop/bmGlyph@2x.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,13 +137,13 @@
 		F8FB32061805D34300E7EECA /* SpriteKit Bitmap Font */ = {
 			isa = PBXGroup;
 			children = (
+				AE3F2D0818438E5D004776E1 /* bmGlyph.atlas */,
+				AE3F2D0418438DAD004776E1 /* bmGlyph.xml */,
+				AE3F2D0518438DAD004776E1 /* bmGlyph@2x.xml */,
 				F84C810E18241FE500C5B17F /* BMGlyphFont.h */,
 				F84C810F18241FE500C5B17F /* BMGlyphFont.m */,
 				F84C811018241FE500C5B17F /* BMGlyphLabel.h */,
 				F84C811118241FE500C5B17F /* BMGlyphLabel.m */,
-				F8FB32441809B87400E7EECA /* bmGlyph@2x.xml */,
-				F8FB32421809441D00E7EECA /* bmGlyph.xml */,
-				F8FB323D18070C3100E7EECA /* bmGlyph.atlas */,
 				F8FB320F1805D34300E7EECA /* AppDelegate.h */,
 				F8FB32101805D34300E7EECA /* AppDelegate.m */,
 				F8FB32121805D34300E7EECA /* Main_iPhone.storyboard */,
@@ -266,12 +266,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8FB321F1805D34300E7EECA /* Spaceship.png in Resources */,
+				AE3F2D0618438DAD004776E1 /* bmGlyph.xml in Resources */,
+				AE3F2D0718438DAD004776E1 /* bmGlyph@2x.xml in Resources */,
 				F84C81151824223700C5B17F /* yellow-coin.png in Resources */,
-				F8FB32431809441D00E7EECA /* bmGlyph.xml in Resources */,
-				F8FB32451809B87400E7EECA /* bmGlyph@2x.xml in Resources */,
 				F8FB32211805D34300E7EECA /* Images.xcassets in Resources */,
 				F8FB32171805D34300E7EECA /* Main_iPad.storyboard in Resources */,
-				F8FB323E18070C3200E7EECA /* bmGlyph.atlas in Resources */,
+				AE3F2D0918438E5D004776E1 /* bmGlyph.atlas in Resources */,
 				F8FB32141805D34300E7EECA /* Main_iPhone.storyboard in Resources */,
 				F8FB320B1805D34300E7EECA /* InfoPlist.strings in Resources */,
 			);
