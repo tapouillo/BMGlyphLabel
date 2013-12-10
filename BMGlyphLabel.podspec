@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = '0.1.0'
   s.summary      = 'Use bitmap fonts generated from the bmGlyph app in SpriteKit'
   s.author = {
-    'Stéphane Queraud' => '???'
+    'Stéphane Queraud' => 'squeraud@gmail.com'
   }
   s.source = {
     :git => 'https://github.com/tapouillo/BMGlyphLabel.git',
