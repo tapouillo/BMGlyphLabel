@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AE3F2D2F18439848004776E1 /* BMGlyphFont.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3F2D2C18439848004776E1 /* BMGlyphFont.m */; };
 		AE3F2D3018439848004776E1 /* BMGlyphLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3F2D2E18439848004776E1 /* BMGlyphLabel.m */; };
+		AE5708281858A12B008304F0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32151805D34300E7EECA /* Main_iPad.storyboard */; };
+		AE5708291858A12F008304F0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32121805D34300E7EECA /* Main_iPhone.storyboard */; };
 		F4E362111845F5DA0058F106 /* bmGlyph.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F4E362101845F5DA0058F106 /* bmGlyph.atlas */; };
 		F4E362141845F5E10058F106 /* bmGlyph.xml in Resources */ = {isa = PBXBuildFile; fileRef = F4E362121845F5E10058F106 /* bmGlyph.xml */; };
 		F4E362151845F5E10058F106 /* bmGlyph@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = F4E362131845F5E10058F106 /* bmGlyph@2x.xml */; };
@@ -276,6 +278,8 @@
 				F4E362141845F5E10058F106 /* bmGlyph.xml in Resources */,
 				F4E362151845F5E10058F106 /* bmGlyph@2x.xml in Resources */,
 				F8FB32211805D34300E7EECA /* Images.xcassets in Resources */,
+				AE5708291858A12F008304F0 /* Main_iPhone.storyboard in Resources */,
+				AE5708281858A12B008304F0 /* Main_iPad.storyboard in Resources */,
 				F4E362111845F5DA0058F106 /* bmGlyph.atlas in Resources */,
 				F8FB320B1805D34300E7EECA /* InfoPlist.strings in Resources */,
 			);
