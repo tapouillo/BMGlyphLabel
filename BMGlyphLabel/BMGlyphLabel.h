@@ -23,12 +23,20 @@ typedef enum _BMGlyphVerticalAlignment
     BMGlyphVerticalAlignmentBottom = 3
 } BMGlyphVerticalAlignment;
 
+typedef enum _BMGlyphJustify
+{
+    BMGlyphJustifyLeft = 1,
+    BMGlyphJustifyRight = 2,
+    BMGlyphJustifyCenter = 3
+} BMGlyphJustify;
+
 
 @interface BMGlyphLabel : SKNode
 
 @property (strong, nonatomic) NSString *text;
 @property (assign, nonatomic) BMGlyphHorizontalAlignment horizontalAlignment;
 @property (assign, nonatomic) BMGlyphVerticalAlignment verticalAlignment;
+@property (assign, nonatomic) BMGlyphJustify textJustify;
 
 - (id) initWithText:(NSString *)text font:(BMGlyphFont *)font;
 

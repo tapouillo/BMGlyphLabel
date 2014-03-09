@@ -13,6 +13,7 @@
 @property (assign, readonly, nonatomic) NSInteger lineHeight;
 @property (strong, readonly, nonatomic) NSMutableDictionary *kernings;
 @property (strong, readonly, nonatomic) NSMutableDictionary *chars;
+@property (strong, readonly, nonatomic) NSMutableDictionary *charsTextures;
 @property (strong, readonly, nonatomic) SKTextureAtlas *textureAtlas;
 
 - (id) initWithName:(NSString *)name;

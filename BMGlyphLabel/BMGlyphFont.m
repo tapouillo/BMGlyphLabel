@@ -13,6 +13,7 @@
 @property (assign, nonatomic) NSInteger lineHeight;
 @property (strong, nonatomic) NSMutableDictionary *kernings;
 @property (strong, nonatomic) NSMutableDictionary *chars;
+@property (strong, nonatomic) NSMutableDictionary *charsTextures;
 @property (strong, nonatomic) SKTextureAtlas *textureAtlas;
 @end
 
@@ -25,10 +26,12 @@
 
 - (id) initWithName:(NSString *)name
 {
-    if ((self = [super init])) {
+    if ((self = [super init]))
+    {
         self.lineHeight = 0;
         self.kernings = [[NSMutableDictionary alloc] init];
         self.chars = [[NSMutableDictionary alloc] init];
+        self.charsTextures = [[NSMutableDictionary alloc] init];
         self.textureAtlas = [SKTextureAtlas atlasNamed:name];
         
         NSString *fontFile = (![self isRunningOnRetinaDevice]) ? name : [NSString stringWithFormat:@"%@@2x", name];
@@ -76,12 +79,15 @@
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
 {
-    if ([elementName isEqualToString:@"kerning"]) {
+    if ([elementName isEqualToString:@"kerning"])
+    {
         NSInteger first  = [[attributeDict valueForKey:@"first"] integerValue];
         NSInteger second = [[attributeDict valueForKey:@"second"] integerValue];
         NSNumber *amount =  [NSNumber numberWithInt:[[attributeDict valueForKey:@"amount"] intValue]];
         [self.kernings setObject:amount forKey:[NSString stringWithFormat:@"%i/%i", (int)first, (int)second]];
-    } else if ([elementName isEqualToString:@"char"]) {
+    }
+    else if ([elementName isEqualToString:@"char"])
+    {
         NSInteger charId = [[attributeDict valueForKey:@"id"] integerValue] ;
         NSNumber *xadvance = [NSNumber numberWithInt:[[attributeDict valueForKey:@"xadvance"] intValue]];
         NSNumber *xoffset  = [NSNumber numberWithInt:[[attributeDict valueForKey:@"xoffset"] intValue]];
@@ -89,7 +95,11 @@
         [self.chars setObject:xoffset forKey:[NSString stringWithFormat:@"xoffset_%i", (int)charId]];
         [self.chars setObject:yoffset forKey:[NSString stringWithFormat:@"yoffset_%i", (int)charId]];
         [self.chars setObject:xadvance forKey:[NSString stringWithFormat:@"xadvance_%i", (int)charId]];
-    } else if ([elementName isEqualToString:@"common"]) {
+        [self.charsTextures setObject:[self textureFor:charId] forKey:[NSString stringWithFormat:@"%i", (int)charId]];
+        
+    }
+    else if ([elementName isEqualToString:@"common"])
+    {
         self.lineHeight = [[attributeDict valueForKey:@"lineHeight"] intValue];
     }
 }
