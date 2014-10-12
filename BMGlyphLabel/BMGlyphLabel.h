@@ -37,6 +37,8 @@ typedef enum _BMGlyphJustify
 @property (assign, nonatomic) BMGlyphHorizontalAlignment horizontalAlignment;
 @property (assign, nonatomic) BMGlyphVerticalAlignment verticalAlignment;
 @property (assign, nonatomic) BMGlyphJustify textJustify;
+@property (nonatomic) SKColor* color;
+@property (nonatomic) CGFloat colorBlendFactor;
 
 - (id) initWithText:(NSString *)text font:(BMGlyphFont *)font;
 

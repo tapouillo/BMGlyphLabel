@@ -167,7 +167,11 @@
     unichar lastCharId = 0;
     CGSize size = CGSizeZero;
     CGPoint pos = CGPointZero;
+#if TARGET_OS_IPHONE
     CGFloat scaleFactor = [UIScreen mainScreen].scale;
+#else
+    CGFloat scaleFactor = 1.0f;
+#endif
     SKSpriteNode *letter;
     
     int childCount = (int)[[self children] count];
@@ -212,10 +216,15 @@
                 letter = [SKSpriteNode spriteNodeWithTexture:[self.font.charsTextures objectForKey:[NSString stringWithFormat:@"%i",c]]];
                 [self addChild:letter];
             }
+            letter.colorBlendFactor = _colorBlendFactor;
+            letter.color = _color;
             letter.anchorPoint = CGPointZero;
             letter.position = CGPointMake(pos.x + ([self.font xOffset:c] + [self.font kerningForFirst:lastCharId second:c]) / scaleFactor,  pos.y - (letter.size.height + ([self.font yOffset:c]) / scaleFactor));
+#if TARGET_OS_IPHONE
             letter.userData = [NSMutableDictionary dictionaryWithObject:[NSValue valueWithCGPoint:letter.position] forKey:@"originalPosition"];
-            
+#else
+            letter.userData = [NSMutableDictionary dictionaryWithObject:[NSValue valueWithPoint:letter.position] forKey:@"originalPosition"];
+#endif
             pos.x += ([self.font xAdvance:c] + [self.font kerningForFirst:lastCharId second:c]) / scaleFactor;
             
             if (size.width < pos.x)
@@ -227,5 +236,22 @@
     }
     self.totalSize = size;
 }
+
+-(void)setColor:(SKColor *)color {
+    _color = color;
+    [self enumerateChildNodesWithName:@"*" usingBlock:^(SKNode *node, BOOL *stop) {
+        SKSpriteNode* letter = (SKSpriteNode*)node;
+        letter.color = color;
+    }];
+}
+
+-(void)setColorBlendFactor:(CGFloat)colorBlendFactor {
+    colorBlendFactor = MIN(colorBlendFactor, 1.0f);
+    colorBlendFactor = MAX(colorBlendFactor, 0.0f);
+    _colorBlendFactor = colorBlendFactor;
+    [self enumerateChildNodesWithName:@"*" usingBlock:^(SKNode *node, BOOL *stop) {
+        SKSpriteNode* letter = (SKSpriteNode*)node;
+        letter.colorBlendFactor = colorBlendFactor;
+    }];}
 
 @end

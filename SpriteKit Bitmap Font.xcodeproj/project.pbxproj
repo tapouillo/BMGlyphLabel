@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33B5C1AC19EA0B7700AF9578 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B5C1AB19EA0B7700AF9578 /* main.m */; };
+		33B5C1AF19EA0B7700AF9578 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B5C1AE19EA0B7700AF9578 /* AppDelegate.m */; };
+		33B5C1B619EA0B7700AF9578 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33B5C1B519EA0B7700AF9578 /* Images.xcassets */; };
+		33B5C1B919EA0B7700AF9578 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B5C1B719EA0B7700AF9578 /* MainMenu.xib */; };
+		33B5C1C519EA0B7700AF9578 /* SpriteKit_Bitmap_Font_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B5C1C419EA0B7700AF9578 /* SpriteKit_Bitmap_Font_MacTests.m */; };
+		33B5C1CC19EA0B9A00AF9578 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FB321C1805D34300E7EECA /* MyScene.m */; };
+		33B5C1CD19EA120B00AF9578 /* BMGlyphFont.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3F2D2C18439848004776E1 /* BMGlyphFont.m */; };
+		33B5C1CE19EA120D00AF9578 /* BMGlyphLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3F2D2E18439848004776E1 /* BMGlyphLabel.m */; };
+		33B5C1CF19EA121800AF9578 /* yellow-coin.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E3621A1845F6790058F106 /* yellow-coin.png */; };
+		33B5C1D019EA121A00AF9578 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F4E362191845F6790058F106 /* Spaceship.png */; };
+		33B5C1D119EA122100AF9578 /* bmGlyph.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F4E362101845F5DA0058F106 /* bmGlyph.atlas */; };
+		33B5C1D219EA122300AF9578 /* bmGlyph@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = F4E362131845F5E10058F106 /* bmGlyph@2x.xml */; };
+		33B5C1D319EA122600AF9578 /* bmGlyph.xml in Resources */ = {isa = PBXBuildFile; fileRef = F4E362121845F5E10058F106 /* bmGlyph.xml */; };
 		AE3F2D2F18439848004776E1 /* BMGlyphFont.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3F2D2C18439848004776E1 /* BMGlyphFont.m */; };
 		AE3F2D3018439848004776E1 /* BMGlyphLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3F2D2E18439848004776E1 /* BMGlyphLabel.m */; };
 		AE5708281858A12B008304F0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FB32151805D34300E7EECA /* Main_iPad.storyboard */; };
@@ -34,6 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		33B5C1BF19EA0B7700AF9578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8FB31F31805D34300E7EECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33B5C1A619EA0B7700AF9578;
+			remoteInfo = "SpriteKit Bitmap Font Mac";
+		};
 		F8FB322B1805D34300E7EECA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8FB31F31805D34300E7EECA /* Project object */;
@@ -44,6 +64,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33B5C1A719EA0B7700AF9578 /* SpriteKit Bitmap Font Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKit Bitmap Font Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B5C1AA19EA0B7700AF9578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33B5C1AB19EA0B7700AF9578 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33B5C1AD19EA0B7700AF9578 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33B5C1AE19EA0B7700AF9578 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33B5C1B519EA0B7700AF9578 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33B5C1B819EA0B7700AF9578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		33B5C1BE19EA0B7700AF9578 /* SpriteKit Bitmap Font MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpriteKit Bitmap Font MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B5C1C319EA0B7700AF9578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33B5C1C419EA0B7700AF9578 /* SpriteKit_Bitmap_Font_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKit_Bitmap_Font_MacTests.m; sourceTree = "<group>"; };
 		AE3F2D2B18439848004776E1 /* BMGlyphFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMGlyphFont.h; path = BMGlyphLabel/BMGlyphFont.h; sourceTree = "<group>"; };
 		AE3F2D2C18439848004776E1 /* BMGlyphFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMGlyphFont.m; path = BMGlyphLabel/BMGlyphFont.m; sourceTree = "<group>"; };
 		AE3F2D2D18439848004776E1 /* BMGlyphLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMGlyphLabel.h; path = BMGlyphLabel/BMGlyphLabel.h; sourceTree = "<group>"; };
@@ -79,6 +109,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33B5C1A419EA0B7700AF9578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B5C1BB19EA0B7700AF9578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8FB31F81805D34300E7EECA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,6 +147,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33B5C1A119EA0B3500AF9578 /* bmGlyph Font */ = {
+			isa = PBXGroup;
+			children = (
+				F4E362121845F5E10058F106 /* bmGlyph.xml */,
+				F4E362131845F5E10058F106 /* bmGlyph@2x.xml */,
+				F4E362101845F5DA0058F106 /* bmGlyph.atlas */,
+			);
+			name = "bmGlyph Font";
+			sourceTree = "<group>";
+		};
+		33B5C1A219EA0B4D00AF9578 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F8FB32201805D34300E7EECA /* Images.xcassets */,
+				F8FB32121805D34300E7EECA /* Main_iPhone.storyboard */,
+				F8FB32151805D34300E7EECA /* Main_iPad.storyboard */,
+				F4E362161845F65F0058F106 /* AppDelegate.h */,
+				F4E362171845F65F0058F106 /* AppDelegate.m */,
+				F8FB32181805D34300E7EECA /* ViewController.h */,
+				F8FB32191805D34300E7EECA /* ViewController.m */,
+				F8FB32071805D34300E7EECA /* Supporting Files */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		33B5C1A819EA0B7700AF9578 /* SpriteKit Bitmap Font Mac */ = {
+			isa = PBXGroup;
+			children = (
+				33B5C1AD19EA0B7700AF9578 /* AppDelegate.h */,
+				33B5C1AE19EA0B7700AF9578 /* AppDelegate.m */,
+				33B5C1B519EA0B7700AF9578 /* Images.xcassets */,
+				33B5C1B719EA0B7700AF9578 /* MainMenu.xib */,
+				33B5C1A919EA0B7700AF9578 /* Supporting Files */,
+			);
+			path = "SpriteKit Bitmap Font Mac";
+			sourceTree = "<group>";
+		};
+		33B5C1A919EA0B7700AF9578 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33B5C1AA19EA0B7700AF9578 /* Info.plist */,
+				33B5C1AB19EA0B7700AF9578 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33B5C1C119EA0B7700AF9578 /* SpriteKit Bitmap Font MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				33B5C1C419EA0B7700AF9578 /* SpriteKit_Bitmap_Font_MacTests.m */,
+				33B5C1C219EA0B7700AF9578 /* Supporting Files */,
+			);
+			path = "SpriteKit Bitmap Font MacTests";
+			sourceTree = "<group>";
+		};
+		33B5C1C219EA0B7700AF9578 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33B5C1C319EA0B7700AF9578 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AE3F2D2A18439835004776E1 /* BMGlyphLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +227,8 @@
 				AE3F2D2A18439835004776E1 /* BMGlyphLabel */,
 				F8FB32061805D34300E7EECA /* SpriteKit Bitmap Font */,
 				F8FB322D1805D34300E7EECA /* SpriteKit Bitmap FontTests */,
+				33B5C1A819EA0B7700AF9578 /* SpriteKit Bitmap Font Mac */,
+				33B5C1C119EA0B7700AF9578 /* SpriteKit Bitmap Font MacTests */,
 				F8FB31FD1805D34300E7EECA /* Frameworks */,
 				F8FB31FC1805D34300E7EECA /* Products */,
 			);
@@ -130,6 +239,8 @@
 			children = (
 				F8FB31FB1805D34300E7EECA /* SpriteKit Bitmap Font.app */,
 				F8FB32261805D34300E7EECA /* SpriteKit Bitmap FontTests.xctest */,
+				33B5C1A719EA0B7700AF9578 /* SpriteKit Bitmap Font Mac.app */,
+				33B5C1BE19EA0B7700AF9578 /* SpriteKit Bitmap Font MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,21 +260,12 @@
 		F8FB32061805D34300E7EECA /* SpriteKit Bitmap Font */ = {
 			isa = PBXGroup;
 			children = (
+				33B5C1A119EA0B3500AF9578 /* bmGlyph Font */,
 				F4E362191845F6790058F106 /* Spaceship.png */,
 				F4E3621A1845F6790058F106 /* yellow-coin.png */,
-				F4E362121845F5E10058F106 /* bmGlyph.xml */,
-				F4E362131845F5E10058F106 /* bmGlyph@2x.xml */,
-				F4E362101845F5DA0058F106 /* bmGlyph.atlas */,
-				F8FB32121805D34300E7EECA /* Main_iPhone.storyboard */,
-				F8FB32151805D34300E7EECA /* Main_iPad.storyboard */,
-				F4E362161845F65F0058F106 /* AppDelegate.h */,
-				F4E362171845F65F0058F106 /* AppDelegate.m */,
-				F8FB32181805D34300E7EECA /* ViewController.h */,
-				F8FB32191805D34300E7EECA /* ViewController.m */,
 				F8FB321B1805D34300E7EECA /* MyScene.h */,
 				F8FB321C1805D34300E7EECA /* MyScene.m */,
-				F8FB32201805D34300E7EECA /* Images.xcassets */,
-				F8FB32071805D34300E7EECA /* Supporting Files */,
+				33B5C1A219EA0B4D00AF9578 /* iOS */,
 			);
 			path = "SpriteKit Bitmap Font";
 			sourceTree = "<group>";
@@ -200,6 +302,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		33B5C1A619EA0B7700AF9578 /* SpriteKit Bitmap Font Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33B5C1C619EA0B7700AF9578 /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap Font Mac" */;
+			buildPhases = (
+				33B5C1A319EA0B7700AF9578 /* Sources */,
+				33B5C1A419EA0B7700AF9578 /* Frameworks */,
+				33B5C1A519EA0B7700AF9578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpriteKit Bitmap Font Mac";
+			productName = "SpriteKit Bitmap Font Mac";
+			productReference = 33B5C1A719EA0B7700AF9578 /* SpriteKit Bitmap Font Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33B5C1BD19EA0B7700AF9578 /* SpriteKit Bitmap Font MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33B5C1C919EA0B7700AF9578 /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap Font MacTests" */;
+			buildPhases = (
+				33B5C1BA19EA0B7700AF9578 /* Sources */,
+				33B5C1BB19EA0B7700AF9578 /* Frameworks */,
+				33B5C1BC19EA0B7700AF9578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33B5C1C019EA0B7700AF9578 /* PBXTargetDependency */,
+			);
+			name = "SpriteKit Bitmap Font MacTests";
+			productName = "SpriteKit Bitmap Font MacTests";
+			productReference = 33B5C1BE19EA0B7700AF9578 /* SpriteKit Bitmap Font MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F8FB31FA1805D34300E7EECA /* SpriteKit Bitmap Font */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8FB32371805D34300E7EECA /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap Font" */;
@@ -244,6 +381,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Stéphane QUERAUD";
 				TargetAttributes = {
+					33B5C1A619EA0B7700AF9578 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					33B5C1BD19EA0B7700AF9578 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 33B5C1A619EA0B7700AF9578;
+					};
 					F8FB32251805D34300E7EECA = {
 						TestTargetID = F8FB31FA1805D34300E7EECA;
 					};
@@ -264,11 +408,34 @@
 			targets = (
 				F8FB31FA1805D34300E7EECA /* SpriteKit Bitmap Font */,
 				F8FB32251805D34300E7EECA /* SpriteKit Bitmap FontTests */,
+				33B5C1A619EA0B7700AF9578 /* SpriteKit Bitmap Font Mac */,
+				33B5C1BD19EA0B7700AF9578 /* SpriteKit Bitmap Font MacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		33B5C1A519EA0B7700AF9578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B5C1D119EA122100AF9578 /* bmGlyph.atlas in Resources */,
+				33B5C1D319EA122600AF9578 /* bmGlyph.xml in Resources */,
+				33B5C1D019EA121A00AF9578 /* Spaceship.png in Resources */,
+				33B5C1B619EA0B7700AF9578 /* Images.xcassets in Resources */,
+				33B5C1CF19EA121800AF9578 /* yellow-coin.png in Resources */,
+				33B5C1D219EA122300AF9578 /* bmGlyph@2x.xml in Resources */,
+				33B5C1B919EA0B7700AF9578 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B5C1BC19EA0B7700AF9578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8FB31F91805D34300E7EECA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +463,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33B5C1A319EA0B7700AF9578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B5C1CC19EA0B9A00AF9578 /* MyScene.m in Sources */,
+				33B5C1AF19EA0B7700AF9578 /* AppDelegate.m in Sources */,
+				33B5C1CE19EA120D00AF9578 /* BMGlyphLabel.m in Sources */,
+				33B5C1CD19EA120B00AF9578 /* BMGlyphFont.m in Sources */,
+				33B5C1AC19EA0B7700AF9578 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B5C1BA19EA0B7700AF9578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B5C1C519EA0B7700AF9578 /* SpriteKit_Bitmap_Font_MacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8FB31F71805D34300E7EECA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +507,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		33B5C1C019EA0B7700AF9578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33B5C1A619EA0B7700AF9578 /* SpriteKit Bitmap Font Mac */;
+			targetProxy = 33B5C1BF19EA0B7700AF9578 /* PBXContainerItemProxy */;
+		};
 		F8FB322C1805D34300E7EECA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F8FB31FA1805D34300E7EECA /* SpriteKit Bitmap Font */;
@@ -328,6 +520,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		33B5C1B719EA0B7700AF9578 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33B5C1B819EA0B7700AF9578 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		F8FB32091805D34300E7EECA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,6 +563,96 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33B5C1C719EA0B7700AF9578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SpriteKit Bitmap Font Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		33B5C1C819EA0B7700AF9578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SpriteKit Bitmap Font Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		33B5C1CA19EA0B7700AF9578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SpriteKit Bitmap Font MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpriteKit Bitmap Font Mac.app/Contents/MacOS/SpriteKit Bitmap Font Mac";
+			};
+			name = Debug;
+		};
+		33B5C1CB19EA0B7700AF9578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SpriteKit Bitmap Font MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpriteKit Bitmap Font Mac.app/Contents/MacOS/SpriteKit Bitmap Font Mac";
+			};
+			name = Release;
+		};
 		F8FB32351805D34300E7EECA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -510,6 +800,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33B5C1C619EA0B7700AF9578 /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap Font Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B5C1C719EA0B7700AF9578 /* Debug */,
+				33B5C1C819EA0B7700AF9578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		33B5C1C919EA0B7700AF9578 /* Build configuration list for PBXNativeTarget "SpriteKit Bitmap Font MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B5C1CA19EA0B7700AF9578 /* Debug */,
+				33B5C1CB19EA0B7700AF9578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F8FB31F61805D34300E7EECA /* Build configuration list for PBXProject "SpriteKit Bitmap Font" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
