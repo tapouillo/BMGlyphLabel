@@ -9,6 +9,8 @@
 #import "MyScene.h"
 #import "BMGlyphFont.h"
 #import "BMGlyphLabel.h"
+
+
 int i=1;
 @implementation MyScene
 
@@ -33,12 +35,23 @@ int i=1;
     return self;
 }
 
+#if TARGET_OS_IPHONE
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     label.text =[NSString stringWithFormat:@"balbal\nscore: %i\nfez",i++];
     [label setTextJustify:BMGlyphJustifyRight];
 
 }
+#else
+
+-(void)mouseDown:(NSEvent *)theEvent {
+	
+	label.text =[NSString stringWithFormat:@"balbal\nscore: %i\nfez",i++];
+	[label setTextJustify:BMGlyphJustifyRight];
+}
+
+#endif
 
 -(void)update:(CFTimeInterval)currentTime
 {

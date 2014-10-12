@@ -46,8 +46,13 @@
 
 - (BOOL) isRunningOnRetinaDevice
 {
+#if TARGET_OS_IPHONE
+
     return ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
             ([UIScreen mainScreen].scale == 2.0));
+#else
+    return NO;
+#endif
 }
 
 - (NSInteger) xAdvance:(unichar)charId
