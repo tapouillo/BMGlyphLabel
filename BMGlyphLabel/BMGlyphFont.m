@@ -34,7 +34,7 @@
         self.charsTextures = [[NSMutableDictionary alloc] init];
         self.textureAtlas = [SKTextureAtlas atlasNamed:name];
         
-        NSString *fontFile = (![self isRunningOnRetinaDevice]) ? name : [NSString stringWithFormat:@"%@@2x", name];
+        NSString *fontFile = [NSString stringWithFormat:@"%@%@", name, [self getSuffixForDevice]];
         NSString* path = [[NSBundle mainBundle] pathForResource:fontFile ofType: @"xml"];
         NSData* data = [NSData dataWithContentsOfFile:path];
         NSXMLParser* parser = [[NSXMLParser alloc] initWithData:data];
@@ -44,15 +44,26 @@
     return self;
 }
 
-- (BOOL) isRunningOnRetinaDevice
+- (NSString *) getSuffixForDevice
 {
+    NSString *suffix = @"";
+    
 #if TARGET_OS_IPHONE
+    CGFloat scale;
+    if (([[UIScreen mainScreen] respondsToSelector:@selector(nativeScale)]))
+        scale = [UIScreen mainScreen].nativeScale;
+    else
+        scale = [UIScreen mainScreen].scale;
 
-    return ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-            ([UIScreen mainScreen].scale == 2.0));
+    if (scale == 2.0)
+        suffix = @"@2x";
+    else if (scale == 3.0)
+        suffix = @"@3x";
+    return suffix;
 #else
-    return NO;
+    return suffix;
 #endif
+    
 }
 
 - (NSInteger) xAdvance:(unichar)charId

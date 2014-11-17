@@ -167,10 +167,14 @@
     unichar lastCharId = 0;
     CGSize size = CGSizeZero;
     CGPoint pos = CGPointZero;
+    CGFloat scaleFactor;
 #if TARGET_OS_IPHONE
-    CGFloat scaleFactor = [UIScreen mainScreen].scale;
+    if (([[UIScreen mainScreen] respondsToSelector:@selector(nativeScale)]))
+        scaleFactor = [UIScreen mainScreen].nativeScale;
+    else
+        scaleFactor = [UIScreen mainScreen].scale;
 #else
-    CGFloat scaleFactor = 1.0f;
+    scaleFactor = 1.0f;
 #endif
     SKSpriteNode *letter;
     

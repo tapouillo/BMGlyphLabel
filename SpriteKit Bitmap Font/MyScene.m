@@ -20,13 +20,15 @@ int i=1;
     {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        self.backgroundColor = [SKColor colorWithRed:0 green:0 blue:0 alpha:1.0];
         
-        font = [BMGlyphFont fontWithName:@"bmGlyph"];
+        font = [BMGlyphFont fontWithName:@"chrome"];
         label = [BMGlyphLabel labelWithText:[NSString stringWithFormat:@"balbal\nscore: %i\nfez",i++] font:font];
-        [label setVerticalAlignment:BMGlyphVerticalAlignmentMiddle];
-        [label setHorizontalAlignment:BMGlyphHorizontalAlignmentLeft];
-        [label setTextJustify:BMGlyphJustifyLeft];
+       
+        //possible aligments
+        //[label setVerticalAlignment:BMGlyphVerticalAlignmentMiddle];
+        //[label setHorizontalAlignment:BMGlyphHorizontalAlignmentLeft];
+        //[label setTextJustify:BMGlyphJustifyLeft];
      
         label.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         [self addChild:label];
