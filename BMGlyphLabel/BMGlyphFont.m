@@ -54,10 +54,10 @@
         scale = [UIScreen mainScreen].nativeScale;
     else
         scale = [UIScreen mainScreen].scale;
-
+    
     if (scale == 2.0)
         suffix = @"@2x";
-    else if (scale == 3.0)
+    else if (scale > 2.0 && scale <= 3.0)
         suffix = @"@3x";
     return suffix;
 #else
