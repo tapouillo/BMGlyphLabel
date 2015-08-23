@@ -169,9 +169,6 @@
     CGPoint pos = CGPointZero;
     CGFloat scaleFactor;
 #if TARGET_OS_IPHONE
-    if (([[UIScreen mainScreen] respondsToSelector:@selector(nativeScale)]))
-        scaleFactor = [UIScreen mainScreen].nativeScale;
-    else
         scaleFactor = [UIScreen mainScreen].scale;
 #else
     scaleFactor = 1.0f;
