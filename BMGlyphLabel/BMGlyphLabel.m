@@ -22,7 +22,7 @@
 
 + (BMGlyphLabel*) labelWithText:(NSString *)text font:(BMGlyphFont *)font
 {
-    return [[BMGlyphLabel alloc] initWithText:text font:font];
+    return [[self alloc] initWithText:text font:font];
 }
 
 - (id) initWithText:(NSString *)text font:(BMGlyphFont *)font
